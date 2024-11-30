@@ -10,7 +10,16 @@ const App = () => {
                 <h1 className="text-2xl  mb-3 w-[80%]">Category Filter</h1>
                 <ul className="  w-[80%]">
                     <li className="mb-3 flex items-center">
-                        <span className=" w-[15px] h-[15px] mr-2  bg-blue-100 rounded-full"></span>Cat 1</li>
+                        <span className=" w-[15px] h-[15px] mr-2  bg-blue-100 rounded-full"></span>Cat 1
+                    </li>
+                    <li className="mb-3 flex items-center">
+                        <span className=" w-[15px] h-[15px] mr-2  bg-red-100 rounded-full"></span>Cat 2
+                    </li>
+                    <li className="mb-3 flex items-center">
+                        <span className=" w-[15px] h-[15px] mr-2  bg-green-100 rounded-full"></span>Cat 3
+                    </li>
+                    <li className="mb-3 flex items-center">
+                        <span className=" w-[15px] h-[15px] mr-2  bg-amber-100 rounded-full"></span>Cat 4                    </li>
                 </ul>
             </nav>
         </div>
