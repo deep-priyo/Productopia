@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Nav from "./Nav.jsx";
 import {Link} from "react-router-dom";
+import {ProductContext} from "../Utils/Context.jsx";
+import Loading from "./Loading.jsx";
 
 const Home = () => {
-    return (
+    const [products]= useContext(ProductContext);
+    return ( products? (
         <>
+
             <Nav/>
             <div className=" w-[85%]  p-10 pt-[5%] flex flex-wrap overflow-x-hidden overflow-y-auto">
 
@@ -17,7 +21,7 @@ const Home = () => {
             </div>
         </>
 
-
+        ): <Loading color={'#a5a4a3'} type={'bars'}  />
     )
 }
 export default Home
