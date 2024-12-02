@@ -16,7 +16,7 @@ const Nav = () => {
             .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize each word
             .join(' '); // Join the words back into a single string
     };
-    console.log(distinct_category)
+
     return (
         <nav className="w-[15%] h-full bg-zinc-100 flex flex-col items-center pt-5">
             <a className="py-3 px-5 border border-blue-100 rounded text-blue-300
