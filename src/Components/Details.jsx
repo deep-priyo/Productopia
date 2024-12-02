@@ -24,13 +24,12 @@ const Details = () => {
     return ( product?(
             <>
 
-                <button onClick={gobackHandler}
-                        className="absolute w-8 h-8 rounded-full my-[20vh] mx-[178vh] flex justify-center items-center">
-                    <img src="/src/assets/img.png" alt=""/>
-                </button>
 
-                <div className="w-[70%] flex h-full justify-between items-center m-auto p-[10%]   ">
-
+                <div className="w-[80%] flex h-full justify-between items-center m-auto p-[10%]   ">
+                    <button onClick={gobackHandler}
+                            className="absolute w-8 h-8 rounded-full top-[20%] right-[20%] flex justify-center items-center">
+                        <img src="/src/assets/img.png" alt=""/>
+                    </button>
                     <img
                         className="object-contain h-[80%] w-[45%]"
                         src={product.image}
@@ -42,7 +41,7 @@ const Details = () => {
                             {product.title}
                         </h1>
                         <h3 className="text-zinc-400 my-5 ">{product.category}</h3>
-                        <h2 className="text-red-300 mb-3">Rs. {((product.price)*83)}</h2>
+                        <h2 className="text-red-300 mb-3">Rs. {((product.price) * 83)}</h2>
                         <p className="mb-5">{product.description}</p>
 
                         <Link
