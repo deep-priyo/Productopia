@@ -9,7 +9,6 @@ const Context = (props) => {
     const getproduct = async () => {
         try {
             const { data } = await axios("/products");
-            console.log(data);
             setProduct(data); // Update state with fetched data
         } catch (err) {
             console.log(err);
