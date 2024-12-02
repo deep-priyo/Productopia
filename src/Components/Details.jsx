@@ -42,7 +42,7 @@ const Details = () => {
                             {product.title}
                         </h1>
                         <h3 className="text-zinc-400 my-5 ">{product.category}</h3>
-                        <h2 className="text-red-300 mb-3">Rs. {product.price}</h2>
+                        <h2 className="text-red-300 mb-3">Rs. {((product.price)*83)}</h2>
                         <p className="mb-5">{product.description}</p>
 
                         <Link
